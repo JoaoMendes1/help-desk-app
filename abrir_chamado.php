@@ -27,7 +27,7 @@
             <a href="logoff.php" class="nav-link">SAIR</a>
           </li>
       </ul>
-      
+
     </nav>
   <!--Fim do Cabeçalho-->
 
@@ -41,15 +41,26 @@
           <div class="row">
             <div class="col">
 
-              <form action="">
+              <form method="POST" action="registra_chamado.php">
                 <div class="form-group">
                   <label for="">Título</label>
-                  <input type="text" class="form-control" placeholder="Título">
+                  <input name="titulo" type="text" class="form-control" placeholder="Título">
+                </div>
+
+                <div class="form-group">
+                  <label>Categorias</label>
+                  <select name="categoria" class="form-control">
+                    <option>Criação de usuário</option>
+                    <option>Impressora</option>
+                    <option>Hardware</option>
+                    <option>Software</option>
+                    <option>Rede</option>
+                  </select>
                 </div>
 
                 <div class="form-group">
                   <label for="">Descrição</label>
-                  <textarea class="form-control" cols="" rows="3"></textarea>
+                  <textarea name="descricao" class="form-control" cols="" rows="3"></textarea>
                 </div>
 
                 <div class="row mt-5">
@@ -58,7 +69,7 @@
                   </div>
 
                   <div class="col-6">
-                    <button class="btn btn-lg btn-info btn-block">Abrir</button>
+                    <button class="btn btn-lg btn-info btn-block" type="submit">Abrir</button>
                   </div>
                 </div>
               </form>

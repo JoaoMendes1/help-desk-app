@@ -1,5 +1,16 @@
+<? require_once("validador_acesso.php");?>
+
 <?php
-  require_once("validador_acesso.php");
+
+  //Abrir o arquivo.hd
+  $arquivo = fopen('arquivo.hd', 'r'); 
+
+  //Enquanto houver registros ou linhas para serem recuperados
+  while(!feof($arquivo)) { //Testa pelo fim de um arquivo
+    //Linhas
+    fgets($arquivo);
+  }
+
 ?>
 
 <html>
@@ -31,7 +42,7 @@
             <a href="logoff.php" class="nav-link">SAIR</a>
           </li>
       </ul>
-      
+
     </nav>
 
     <div class="container">    
