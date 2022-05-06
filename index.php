@@ -41,10 +41,10 @@
                 <input name="senha" type="password" class="form-control" placeholder="Senha">
               </div>
 
-              <? if(isset($_GET['login']) && $_GET['login'] == 'erro'){ ?>
+              <? if(isset($_GET['login']) && $_GET['login'] == 'erro') { ?>
 
                 <div class="text-danger">
-                  Usuário ou senha inválido(s).
+                   Usuário ou senha invalido(s)
                 </div>
 
               <? } ?>
