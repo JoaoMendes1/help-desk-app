@@ -20,7 +20,8 @@ foreach($usuario_app as $user) {
 if($usuario_autenticado) {
     echo 'Usuário autenticado';
     $_SESSION['autenticado'] = 'SIM';
-    echo '<script>alert("Usuário autenticado!");</script>';
+    header('Location: home.php');
+    // echo '<script>alert("Usuário autenticado!");</script>';
 } else {
     $_SESSION['autenticado'] = 'NÃO';
    header('Location: index.php?login=erro');
