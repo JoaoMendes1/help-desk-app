@@ -6,8 +6,10 @@ $usuario_autenticado = false;
 
 // ----- USUÁRIOS DO SISTEMA --------
 $usuario_app = array(
-    array('email' => 'adm@teste.com.br', 'senha' => '123456'),
-    array('email' => 'user@teste.com.br','senha' => 'abcd'),
+    array('email' => 'adm@teste.com.br', 'senha' => '1234'),
+    array('email' => 'user@teste.com.br','senha' => '1234'),
+    array('email' => 'jose@teste.com.br', 'senha' => '1234'),
+    array('email' => 'maria@teste.com.br','senha' => '1234'),
 );  
 
 foreach($usuario_app as $user) {
