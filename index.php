@@ -10,7 +10,7 @@
     <style>
       .card-login {
         padding: 30px 0 0 0;
-        width: 350px;
+        width: 3550px;
         margin: 0 auto;
       }
     </style>
